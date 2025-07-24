@@ -2,7 +2,7 @@
   "openapi": "3.0.0",
   "info": {
     "title": "SignNow API",
-    "description": "This collection provides a complete list of all available **SignNow eSignature API** requests, including **authorization, sending signature invites, creating templates, managing documents, and embedding eSignature workflows** into your applications. It’s designed to help you explore, test, and integrate SignNow’s full range of eSignature capabilities with ease.\n\n### Get Started 🚀\n\n- **Free Sandbox Account**: [Sign up here](https://app.signnow.com/webapp) to start testing.\n    \n- **API Documentation**: Full reference guide [here](https://docs.signnow.com/docs/signnow/welcome).\n    \n- **Release Notes**: Stay updated on API changes [here](https://www.signnow.com/release-notes/signnow-api).\n    \n- **GitHub**: Explore SDKs and code samples on [GitHub](https://github.com/signnow).",
+    "description": "This collection provides a complete list of all available **SignNow eSignature API** requests, including **authorization, sending signature invites, creating templates, managing documents, and embedding eSignature workflows** into your applications. It’s designed to help you explore, test, and integrate SignNow’s full range of eSignature capabilities with ease.\n\n### Get Started \n\n- **Free Sandbox Account**: [Sign up here](https://app.signnow.com/webapp) to start testing.\n    \n- **API Documentation**: Full reference guide [here](https://docs.signnow.com/docs/signnow/welcome).\n    \n- **Release Notes**: Stay updated on API changes [here](https://www.signnow.com/release-notes/signnow-api).\n    \n- **GitHub**: Explore SDKs and code samples on [GitHub](https://github.com/signnow).",
     "version": "1.0.0"
   },
   "servers": [
