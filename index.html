@@ -35,7 +35,73 @@
       <img src="logo.png" alt="My API Logo" />
     </div>
 
-    <!-- ReDoc Component -->
+<redoc
+  spec-url="SignNowNew.json"
+  scroll-y-offset="60"
+  hide-hostname="true"
+  expand-responses="200,201,400"
+  required-props-first="true"
+  show-object-schema-examples="true"
+  disable-search="false"
+  theme='{
+    "colors": {
+      "primary": { "main": "#C71585" },
+      "success": { "main": "#00BFA6" },
+      "error": { "main": "#FF4500" },
+      "warning": { "main": "#FFA500" },
+      "text": {
+        "primary": "#212121",
+        "secondary": "#5D5D5D"
+      },
+      "background": {
+        "default": "#FFFDF9",
+        "paper": "#FDF5F5"
+      },
+      "http": {
+        "get": "#1E90FF",
+        "post": "#FF69B4",
+        "put": "#FFD700",
+        "delete": "#DC143C"
+      }
+    },
+    "typography": {
+      "fontFamily": "Georgia, serif",
+      "fontSize": "18px",
+      "lineHeight": "1.7",
+      "headings": {
+        "fontFamily": "Georgia, serif",
+        "fontWeight": "700",
+        "lineHeight": "1.5"
+      },
+      "code": {
+        "fontFamily": "Fira Code, monospace",
+        "fontSize": "15px",
+        "color": "#8800CC"
+      }
+    },
+    "sidebar": {
+      "backgroundColor": "#FCE4EC",
+      "textColor": "#6A1B9A",
+      "activeTextColor": "#C2185B",
+      "arrow": {
+        "color": "#BA68C8"
+      },
+      "groupItems": {
+        "textColor": "#7B1FA2",
+        "activeTextColor": "#AD1457"
+      }
+    },
+    "rightPanel": {
+      "backgroundColor": "#FFF0F5",
+      "textColor": "#4A148C"
+    },
+    "logo": {
+      "gutter": "30px"
+    }
+  }'
+></redoc>
+
+    <!-- ReDoc Component
     <redoc
       spec-url="SignNowNew.json"
       scroll-y-offset="60"
@@ -74,7 +140,7 @@
           "activeTextColor": "#1E3A8A"
         }
       }'
-    ></redoc>
+    ></redoc> -->
 
     <!-- ReDoc Script -->
     <script src="https://cdn.redoc.ly/redoc/latest/bundles/redoc.standalone.js"></script>
