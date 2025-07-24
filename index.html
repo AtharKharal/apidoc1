@@ -1,12 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Athar Kharal</title>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <title>My API Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicon and Fonts -->
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+
+    <!-- Custom Style Overrides -->
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      body {
+        margin: 0;
+        background: #f9fafb;
+        font-family: 'Inter', sans-serif;
+      }
+      .logo {
+        position: absolute;
+        top: 16px;
+        left: 24px;
+        z-index: 10;
+      }
+      .logo img {
+        height: 40px;
+      }
+    </style>
   </head>
   <body>
-    <h1>API Documentation Stage-1 : <span style="color: red;">developed by Athar Kharal</span></h1>
-    <redoc spec-url="SignNowNew.json"></redoc>
+    <!-- Optional Logo -->
+    <div class="logo">
+      <img src="logo.png" alt="My API Logo" />
+    </div>
+
+    <!-- ReDoc Component -->
+    <redoc
+      spec-url="SignNowNew.json"
+      scroll-y-offset="60"
+      hide-hostname="true"
+      expand-responses="200,201,400"
+      required-props-first="true"
+      show-object-schema-examples="true"
+      disable-search="false"
+      theme='{
+        "colors": {
+          "primary": { "main": "#1E40AF" },
+          "success": { "main": "#22C55E" },
+          "error": { "main": "#EF4444" },
+          "text": {
+            "primary": "#1F2937",
+            "secondary": "#6B7280"
+          },
+          "http": {
+            "get": "#10B981",
+            "post": "#3B82F6",
+            "put": "#F59E0B",
+            "delete": "#EF4444"
+          }
+        },
+        "typography": {
+          "fontFamily": "Inter, sans-serif",
+          "fontSize": "16px",
+          "headings": {
+            "fontFamily": "Inter, sans-serif",
+            "fontWeight": "600"
+          }
+        },
+        "sidebar": {
+          "backgroundColor": "#ffffff",
+          "textColor": "#374151",
+          "activeTextColor": "#1E3A8A"
+        }
+      }'
+    ></redoc>
+
+    <!-- ReDoc Script -->
     <script src="https://cdn.redoc.ly/redoc/latest/bundles/redoc.standalone.js"></script>
   </body>
 </html>
