@@ -7,7 +7,10 @@
 
     <!-- Favicon and Fonts -->
     <link rel="icon" type="image/png" href="favicon.png" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Custom Style Overrides -->
     <link rel="stylesheet" href="style.css" />
@@ -30,26 +33,34 @@
     </style>
   </head>
   <body style="margin:0; font-family: sans-serif;">
-  <!-- Header Bar -->
-  <header style="position:sticky; top: 0px; left: 0px; z-index: 50; background-color: white; width: 100%; display: flex; align-items: center; background-color: #f8f9fa; padding: 12px 24px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-    <!-- Logo Image -->
-    <img src="Athar.PNG" alt="Athar API Docs Logo" style="height: 48px; width: auto; margin-right: 16px;" />
-    <!-- Signature Text -->
-    <h1 style="font-size: 1.5rem; color: #cc0000; margin: 0;
-      ">Developed by Athar Kharal, PhD </h1>
-  </header>
+    <!-- Header Bar -->
+    <header
+      style="position:sticky; top: 0px; left: 0px; z-index: 50; background-color: white; width: 100%; display: flex; align-items: center; background-color: #f8f9fa; padding: 12px 24px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"
+    >
+      <!-- Logo Image -->
+      <img
+        src="Athar.PNG"
+        alt="Athar API Docs Logo"
+        style="height: 48px; width: auto; margin-right: 16px;"
+      />
+      <!-- Signature Text -->
+      <h1
+        style="font-size: 1.5rem; color: #cc0000; margin: 0;
+      "
+      >
+        Developed by Athar Kharal, PhD
+      </h1>
+    </header>
 
-
-
-<redoc
-  spec-url="SignNowNew.json"
-  scroll-y-offset="60"
-  hide-hostname="true"
-  expand-responses="200,201,400"
-  required-props-first="true"
-  show-object-schema-examples="true"
-  disable-search="false"
-  theme='{
+    <redoc
+      spec-url="DataScienceAPI.yml"
+      scroll-y-offset="60"
+      hide-hostname="true"
+      expand-responses="200,201,400"
+      required-props-first="true"
+      show-object-schema-examples="true"
+      disable-search="false"
+      theme='{
     "colors": {
       "primary": { "main": "#C71585" },
       "success": { "main": "#00BFA6" },
@@ -105,9 +116,9 @@
       "gutter": "30px"
     }
   }'
-></redoc>
+    ></redoc>
 
-<!-- ReDoc Component
+    <!-- ReDoc Component
     <redoc spec-url="SignNowNew.json"
 
   
